@@ -7,14 +7,13 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task0.V15.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            int k;
-            double sumseries = 0;
-            
-            for (k = startValue; k <= stopValue;  k++);
+            double sumSeries = 0;
+
+            for (int k = startValue; k <= stopValue; k++) 
             {
-                sumseries = sumseries + ((Math.Pow(value, k) + (2 / k + 1))*Math.Sin(value));
+                sumSeries += (Math.Pow(value, k) + (2.0 / (k + 1))) * Math.Sin(value); 
             }
-            return Math.Round(sumseries, 3);
+            return Math.Round(sumSeries, 3);
         }
     }
 }

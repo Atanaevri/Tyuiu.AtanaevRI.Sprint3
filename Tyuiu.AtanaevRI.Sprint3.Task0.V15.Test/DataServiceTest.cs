@@ -10,9 +10,9 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task0.V15.Test
             DataService ds = new DataService();
             int startValue = 1 ;
             int stopValue = 10;
-            double value = 5;
+            double value = 0.7;
             double res = ds.GetSumSeries(value, startValue, stopValue);
-            Assert.AreEqual(-46822475, 308, res);
+            Assert.AreEqual(4.063, res);
         }
     }
 }
