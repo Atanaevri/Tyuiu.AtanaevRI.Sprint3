@@ -12,7 +12,7 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task1.V21.Lib
                 series = series * Math.Pow((((0.5) + (startValue / 5.0)) / (Math.Cos(value) + 0.5)), 3);
                 startValue++;
             }
-            return Math.Round(series, 3); 
+            return Math.Round(series, 2); 
         }
     }
 }
