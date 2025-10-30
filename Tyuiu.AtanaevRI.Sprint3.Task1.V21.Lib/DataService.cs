@@ -6,13 +6,13 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task1.V21.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-           double series = 1;
+            double series = 1;
             while (startValue <= stopValue)
             {
-                series = series * Math.Pow((((0.5) + (startValue / 5)) / (Math.Cos(value) + 0.5)), 3);
+                series = series * Math.Pow((((0.5) + (startValue / 5.0)) / (Math.Cos(value) + 0.5)), 3);
                 startValue++;
             }
-            return Math.Round(series, 3);     
-        }  
+            return Math.Round(series, 3); 
+        }
     }
 }
