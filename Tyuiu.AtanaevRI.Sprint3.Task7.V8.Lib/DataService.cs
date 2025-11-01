@@ -22,10 +22,10 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task7.V8.Lib
                 }
                 else
                 {
-                    double dem = 2 - x;
-                    double num = Math.Cos(x) + 1;
-                    double f = num /dem;
-                    double g = Math.Sin(x) + f + 2 * x;
+                    double sinx = Math.Sin(x);
+                    double cosx = Math.Cos(x);
+                    double f = (cosx +1) / (2 -x);
+                    double g = sinx + f + 2 * x;
                     value[count] = Math.Round(g, 2);
                     count++;
                 }
