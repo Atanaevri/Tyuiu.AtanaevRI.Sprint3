@@ -18,7 +18,7 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task7.V8.Lib
             {
                 double d = ((Math.Cos(x) + 1) / (2 - x));
                 double g = Math.Sin(x) + d + 2 * x;
-                value[count] = g;
+                value[count] = Math.Round(g, 2);
                 count++;
 
             }
