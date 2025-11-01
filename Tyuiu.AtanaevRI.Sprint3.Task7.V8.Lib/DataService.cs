@@ -14,13 +14,19 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task7.V8.Lib
             value = new double[len];
             double y;
             int count = 0;
-            for (int x = startValue;  x < stopValue; x++)
+            for (int x = startValue;  x <= stopValue; x++)
             {
-                double d = ((Math.Cos(x) + 1) / (2 - x));
-                double g = Math.Sin(x) + d + 2 * x;
-                value[count] = Math.Round(g, 2);
-                count++;
-
+                if (x == 2)
+                {
+                    value[count] = 0;
+                }
+                else
+                {
+                    double d = ((Math.Cos(x) + 1) / (2 - x));
+                    double g = Math.Sin(x) + d + 2 * x;
+                    value[count] = Math.Round(g, 2);
+                    count++;
+                }
             }
             return value;
         }
