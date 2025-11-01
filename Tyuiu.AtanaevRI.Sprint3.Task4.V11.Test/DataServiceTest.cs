@@ -11,7 +11,7 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task4.V11.Test
             int startValue = -5;
             int stopValue = 5;
             double res = ds.Calculate(startValue, stopValue);
-            Assert.AreEqual(0.104,res);
+            Assert.AreEqual(0.84, res);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Tyuiu.AtanaevRI.Sprint3.Task4.V11.Lib
                 }
                 else
                 {
-                    res = res * ( (x/(Math.Sin(x) -x) ) +2);
+                    res = res *  (x/ (Math.Sin(x) -x)  +2);
                 }
             }
             return Math.Round(res, 3);
