@@ -8,10 +8,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine();
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-        Console.WriteLine("***************************************************************************");
+        
 
         
         int startValue = -5;
@@ -21,6 +18,9 @@ internal class Program
         double[] value;
         value = new double[len];
         value = ds.GetMassFunction(startValue, stopValue);
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+        Console.WriteLine("***************************************************************************");
 
         for (int i = 0; i <= len-1; i++)
         {
